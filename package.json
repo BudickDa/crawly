@@ -15,7 +15,7 @@
   "author": "Daniel Budick",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@google-cloud/translate": "^0.7.0",
+    "@google-cloud/translate": "^0.8.0",
     "assert": "^1.4.1",
     "babel-core": "^6.24.0",
     "babel-plugin-syntax-async-functions": "^6.13.0",
