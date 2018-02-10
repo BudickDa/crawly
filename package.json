@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run build && mocha",
     "build": "babel src -d dist",
-    "prepublish": "npm run build"
+    "prepublish": "npm run snyk-protect; npm run build",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,8 @@
     "process": "^0.11.9",
     "request": "^2.75.0",
     "underscore": "^1.8.3",
-    "xxhashjs": "^0.2.1"
+    "xxhashjs": "^0.2.1",
+    "snyk": "^1.69.7"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
@@ -38,5 +40,6 @@
     "finalhandler": "^1.0.0",
     "mocha": "^3.1.2",
     "serve-static": "^1.12.1"
-  }
+  },
+  "snyk": true
 }
